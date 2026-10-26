@@ -87,11 +87,15 @@ img{
 }
 
 .header {
-    background-image: url('../images/banner.png');
+    background-image: linear-gradient(rgba(18, 25, 32, 0.58), rgba(18, 25, 32, 0.58)), url('../images/banner.png');
     height: 645px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.header:not(#header) .navbar-option {
+    background-color: rgba(255, 255, 255, 0.96);
 }
 
 .header .navbar-default {
@@ -121,6 +125,8 @@ img{
     margin-top: 170px;
     text-align: left;
     margin-left: 30px;
+    color: #fff;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.45);
 }
 
 .header .banner .banner-content h1 span {
@@ -133,6 +139,8 @@ img{
     text-transform: uppercase;
     text-align: left;
     margin-left: 60px;
+    color: #fff;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
 }
 
 .header .banner .banner-content .owl-prev {
@@ -400,9 +408,10 @@ img{
 }
 
 .blog .blog-img {
-    text-align: center;
+    display: block;
+    width: 100%;
     position: relative;
-    display: inline-block;
+    text-align: center;
 }
 
 .blog .blog-img img {
