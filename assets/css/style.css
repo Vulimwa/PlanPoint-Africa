@@ -73,23 +73,26 @@ img{
 
 .header .navbar-brand {
     display: block;
-    height: auto;
-    padding: 5px 15px;
-}
-
-.header .navbar-brand img {
-    display: block;
-    width: auto;
-    max-width: 190px;
-    height: 64px;
-    object-fit: contain;
-}
-
-.header .navbar-brand span {
+    height: 50px;
+    padding: 15px;
     color: #f04c26;
     font-size: 22px;
     font-weight: 700;
-    line-height: 64px;
+    line-height: 20px;
+    white-space: nowrap;
+}
+
+.header .navbar-brand .brand-name {
+    color: #f04c26;
+}
+
+.header .navbar-brand .brand-region {
+    margin-left: 2px;
+    padding-left: 7px;
+    border-left: 2px solid #f04c26;
+    color: #414141;
+    font-size: 15px;
+    font-weight: 600;
 }
 
 .header .navbar-default .navbar-toggle .icon-bar {
@@ -869,11 +872,8 @@ img{
         min-height: 72px;
     }
     .header .navbar-brand {
-        padding: 5px 15px;
-    }
-    .header .navbar-brand img {
-        height: 60px;
-        max-width: 170px;
+        height: 50px;
+        padding: 15px;
     }
     .header .navbar-toggle {
         position: absolute;
